@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>'
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav clearfix">
+<h1>KIMHANEUL</h1>
+<ul>
+<li><a href="section1">meul</a></li>
+<li><a href="section2">meul</a></li>
+<li><a href="section3">meul</a></li>
+<li><a href="section4">meul</a></li>
+<li><a href="section5">meul</a></li>
+<li><a href="section6">meul</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+    <div id="secton1">
+        <h2>1. Uh take it to the next lev<br>Uh 개처럼 냄샐
+            맡어 나의 뒤엔 gang gang</h2>
+    </div>
+    <div id="section2">
+        <h2>2. Playing game 튀지 않는 나의 취향은 basic<br>몇 번의 위기 위를 넘어 다녀</h2>
+    </div>
+    <div id="section3">
+        <h2>3. 너무 빠른 세상에서 걸어 다녀<br>계속 벌어 나는 계속 벌어<br>몇 번 넘어져도 나의 커리어는 떳떳</h2>
+    </div>
+    <div id="section4">
+        <h2>4. 또 멀어져 가네 나의 고향 서울<br>멍청해지지 돈을 벌면<br>친구들은 하나둘씩 떠나가 문제였을까 싶어 나의 변화가</h2>
+    </div>
+    <div id="section5">
+        <h2>5. 멍청해지지 돈을 벌면<br>친구들은 하나둘씩 떠나가<br>문제였을까 싶어 나의 변화가</h2>
+    </div>
+    <div id="section6">
+        <h2>6. 나는 멋진 놈이고 싶어 이긴 만큼 깊어져<br>나는 쿨하게 지고 싶어 멋있게 지고 싶어</h2>
+    </div>
+    <div class="section7">
+        <h2>7. 좋은 날은 오니까<br>오늘 하룰 버텨 나쁜 일이라도<br>나는 가볼래 내가 알던 곳부터 낯선 곳도</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        var nav = $(function(e){
+            e.preventDefault();
+            var index = $(this).index();
+
+            var section = cont.eq(ixdex)
+            console.log(section);
+
+            var offset = section.offset().top;
+            console.log(offset);
+
+            $('html, body').animate({
+                scrollTop:offset
+            },600)
+        });
+    </script>
+</div>
+</body>
+</html>
